@@ -5,7 +5,7 @@
   # Global options - aka. let
   globals = {
     # Sets the leader key
-    mapleader = " ";
+    mapleader = "<space>";
   };
 
   # Local options - aka. set
@@ -44,9 +44,11 @@
 
     # Enable lazygit plugin in nvim
     lazygit.enable = true;
-    
+
     # Enable telescope
     telescope.enable = true;
+
+    which-key.enable = true;
 
     # Provide more capabilities to lsp servers
     cmp = {
@@ -65,8 +67,8 @@
     # Enable and configure the tree-sitter plugin
     treesitter = {
       enable = true;
-      folding = true;
-        nixvimInjections = true;
+      # folding = true;
+      nixvimInjections = true;
 
       settings = {
         highlight = {
